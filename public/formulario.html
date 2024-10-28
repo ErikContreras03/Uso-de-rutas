@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bienvenido al formulario</h1>
+    <div class="nav-links">
+        <a href="/1">Inicio</a> | 
+        <a href="/informacion">Información</a>
+    </div>
+
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <form action="/enviar-datos" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" max="120" required>
+
+            <label>Género:</label>
+            <div class="radio-group">
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales: 
+                <a href="https://facebook.com">Facebook</a> | 
+                <a href="https://twitter.com">Twitter</a> | 
+                <a href="https://instagram.com">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
